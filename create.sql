@@ -112,7 +112,6 @@ references utilizador (id_util);
 alter table util_grupo add constraint fk_util_grupo_grupo foreign key (grupo)
 references grupo (id_gru);
 
--- Jogo
 alter table jogo add constraint fk_jogo_produto foreign key (produto)
 references produto (id_prod);
 
