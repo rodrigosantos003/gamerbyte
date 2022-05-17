@@ -79,6 +79,8 @@ create table compra (id_compra int not null auto_increment,
 create table venda (id_venda int not null auto_increment,
 						produto int not null,
                         util int not null,
+                        valor double not null,
+                        data date not null,
                         constraint pk_compra_id_compra primary key (id_venda));
 
 
