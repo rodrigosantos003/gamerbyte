@@ -1,6 +1,6 @@
 -- GAMERBYTE - CREATE
 -- AUTORES: João Fernandes & Rodrigo Santos
--- ÚLTIMA MODIFICAÇÃO: 2022-05-16
+-- ÚLTIMA MODIFICAÇÃO: 2022-05-19
 
 -- CRIAÇÃO DA BASE DE DADOS
 drop database if exists gamerbyte;
@@ -14,7 +14,7 @@ create table utilizador (id_util int not null auto_increment,
                             nome varchar(60) not null,
                             email varchar(50) not null unique,
                             password varchar(30) not null,
-                            avatar longblob,
+                            avatar text,
                             data_cri date not null,
                             constraint pk_utilizador_id_ami primary key (id_util));
 
@@ -43,7 +43,7 @@ create table produto (id_prod int not null auto_increment,
 -- Jogo
 create table jogo (id_jog int not null auto_increment,
 					nome varchar(60) not null unique,
-                    descricao varchar(100) not null,
+                    descricao text not null,
                     preco double not null,
                     produto int not null,
                     constraint pk_jogo_id_jog primary key (id_jog));
@@ -62,7 +62,7 @@ create table prod_inv (id_prod_inv int not null auto_increment,
 -- Critica
 create table critica (id_crit int not null auto_increment,
 						data date not null,
-                        descricao varchar(100) not null,
+                        descricao text not null,
                         jogo int not null,
                         util int not null,
                         constraint pk_critica_id_crit primary key (id_crit));
