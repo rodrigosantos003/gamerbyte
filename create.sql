@@ -20,8 +20,8 @@ create table utilizador (id_util int not null auto_increment,
 
 -- Amizade
 create table amizade (id_ami int not null auto_increment,
-						util_1 int not null,
-                        util_2 int not null,
+						util_1 int not null unique,
+                        util_2 int not null unique,
                         constraint pk_amizade_id_ami primary key (id_ami));
 
 -- Grupo

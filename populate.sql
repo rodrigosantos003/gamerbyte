@@ -25,9 +25,15 @@ values ("QuarenDRENAS");
 insert into util_grupo (util, grupo)
 values (1, 1);
 
+insert into util_grupo (util, grupo)
+values (2, 1);
+
 -- Produto
 insert into produto (tipo)
 values ("Jogo");
+
+insert into produto (tipo)
+values ("Item");
 
 -- Jogo
 insert into jogo (nome, descricao, preco, produto)
@@ -43,6 +49,9 @@ values (1);
 insert into prod_inv (inventario, produto)
 values (1, 1);
 
+insert into prod_inv (inventario, produto)
+values (1, 2);
+
 -- Critica
 insert into critica (data, descricao, jogo, util)
 values ("2022-05-19", "Gostei do jogo. Ótimo para jogar com amigos", 1, 1);
@@ -54,7 +63,6 @@ values (1, 1, 12.50, "2022-05-19");
 -- Venda
 insert into venda (produto, util, valor, data)
 values (1, 1, 12.50, "2022-05-19");
-
 
 -- Item
 insert into item (nome, descricao, inv)
