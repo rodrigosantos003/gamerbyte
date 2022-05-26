@@ -34,7 +34,7 @@ from produto;
 select produto as "Nº Produto", nome as "Nome", descricao as "Descrição", preco as "Preco"
 from jogo;
 
--- Obter Invantários
+-- Obter Inventários
 select id_inv as "ID", utilizador.nome_util as "Utilizador"
 from inventario left join utilizador
 on utilizador.id_util = inventario.util;
@@ -44,7 +44,8 @@ select prod_inv.inventario as "Inventário", produto.id_prod as "Produto"
 from prod_inv left join inventario
 on inventario = inventario.id_inv
 left join produto
-on produto.id_prod = produto;
+on produto.id_prod = produto
+order by inventario.id_inv;
 
 -- Obter Críticas
 select utilizador.nome_util as "Utilizador", jogo.nome as "Jogo", critica.descricao as "Crítica", critica.data as "Data"
@@ -89,14 +90,6 @@ from utilizador;
 -- Número de Jogos
 select count(*) as "Número de Jogos"
 from jogo;
-
--- Total de Compras
-select count(*) as "Total de Compras"
-from compras;
-
--- Total de Vendas
-select count(*) as "Total de Compras"
-from compras;
 
 -- Maior Compra realizada
 select id_compra as "ID", data as "Data", max(valor) as "Valor"
