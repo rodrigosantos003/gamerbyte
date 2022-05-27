@@ -10,4 +10,4 @@ Scripts do pojeto da UC de BD (CTeSP TPSI)
 ## [Create](./create.sql)
 ## [Populate](./populate.sql)
 ## Queries
-  ### [Simples](./query_sim.sql)
+- ### [Simples](./query_sim.sql)
