@@ -18,7 +18,7 @@ from amizade;
 select id_gru as "ID", nome as "Nome"
 from grupo;
 
--- Obter membros dos grupos
+-- Obter Membros dos Grupos
 select utilizador.nome_util as "Utilizador", grupo.nome as "Grupo"
 from util_grupo left join utilizador
 on util_grupo.util = utilizador.id_util
@@ -83,11 +83,11 @@ left join jogo
 on jogo.id_jog = medalha.jogo;
 
 -- DADOS ESTATÍSTICOS
--- Número de Utilizadores
+-- Total de Utilizadores
 select count(*) as "Número de Utilizadores" 
 from utilizador;
 
--- Número de Jogos
+-- Total de Jogos
 select count(*) as "Número de Jogos"
 from jogo;
 

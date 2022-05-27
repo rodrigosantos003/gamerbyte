@@ -5,7 +5,6 @@
 -- UTILIZAÇÃO DA BASE DE DADOS
 use gamerbyte;
 
--- POPULAÇÃO DAS TABELAS
 -- Utilizador
 insert into utilizador (nome_util, nome, email, password, avatar, data_cri)
 values ("Santos", "Rodrigo Santos", "rodrigo.s.santos003@gmail.com", "abc1234.", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Favatarfiles.alphacoders.com%2F167%2F167444.jpg&f=1&nofb=1", "2022-05-18");
