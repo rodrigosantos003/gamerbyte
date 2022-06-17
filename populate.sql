@@ -69,4 +69,7 @@ values ("Shotgun", "Shoot at another player in range to do 15 damage to them. It
 
 -- Medalha
 insert into medalha (nome, nivel, jogo, util)
-values ("Player with the most damage dealt at the end of 10 games", 1, 1, 1);
+values ("Player with the most damage dealt at the end of 10 games", 50, 1, 1);
+
+insert into medalha (nome, nivel, jogo, util)
+values ("Steal from the poor", 5, 1, 2);

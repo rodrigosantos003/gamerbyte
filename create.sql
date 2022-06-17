@@ -94,7 +94,7 @@ create table item (id_item int not null auto_increment,
 
 -- Medalha
 create table medalha (id_med int not null auto_increment,
-						nome varchar(60) not null unique,
+						nome varchar(60) not null,
                         nivel double not null,
                         jogo int not null,
                         util int not null,
