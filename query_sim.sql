@@ -1,6 +1,6 @@
 -- GAMERBYTE - CONSULTAS SIMPLES
 -- AUTORES: João Fernandes & Rodrigo Santos
--- ÚLTIMA MODIFICAÇÃO: 2022-05-26
+-- ÚLTIMA MODIFICAÇÃO: 2022-06-17
 
 use gamerbyte;
 
@@ -93,8 +93,10 @@ from jogo;
 
 -- Maior Compra realizada
 select id_compra as "ID", data as "Data", max(valor) as "Valor"
-from compra;
+from compra
+having Valor > 0.0;
 
 -- Maior Venda realizada
 select id_venda as "ID", data as "Data", max(valor) as "Valor"
-from venda;
+from venda
+having Valor > 0.0;
